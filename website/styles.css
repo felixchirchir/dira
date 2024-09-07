@@ -1,0 +1,163 @@
+
+  /* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: whitesmoke;
+  }
+  
+  header {
+    background-color: #007bff;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+  }
+  
+  .logo h1 {
+    margin: 0;
+  }
+  
+  nav {
+    flex: 1;
+  }
+  
+  .nav-list {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .nav-list li {
+    position: relative;
+  }
+  
+  .nav-list a {
+    color: #fff;
+    padding: 15px 20px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .nav-list a:hover {
+    background-color: #0056b3;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #0056b3;
+    min-width: 200px;
+    z-index: 1;
+    top: 100%;
+    left: 0;
+  }
+  
+  .dropdown-content li {
+    width: 100%;
+  }
+  
+  .dropdown-content a:hover {
+    background-color: #003a80;
+  }
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  
+  .hero {
+    background: url('https://via.placeholder.com/1200x500') no-repeat center center/cover;
+    color: white;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .hero h2 {
+    font-size: 48px;
+  }
+  
+  .hero p {
+    font-size: 24px;
+  }
+  
+  /* Page Content */
+  .page {
+    padding: 20px;
+  }
+  
+  /* FAQ Styles */
+  .faq-item {
+    margin-bottom: 20px;
+  }
+  
+  .faq-item h3 {
+    cursor: pointer;
+    color: #007bff;
+  }
+  
+  .faq-answer {
+    padding: 10px;
+    background-color: #f1f1f1;
+    border-left: 3px solid #007bff;
+  }
+  
+  /* Footer Styles */
+  footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+  }
+  
+  /* Mobile Styles */
+  .menu-toggle {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+  }
+  
+  .menu-toggle .bar {
+    width: 25px;
+    height: 3px;
+    background-color: #fff;
+    margin: 4px 0;
+  }
+  
+  @media (max-width: 768px) {
+    nav {
+      display: none;
+    }
+  
+    .menu-toggle {
+      display: flex;
+    }
+  
+    .nav-list {
+      flex-direction: column;
+      width: 100%;
+      position: absolute;
+      top: 60px;
+      left: 0;
+      background-color: #007bff;
+      display: none;
+    }
+  
+    .nav-list li {
+      text-align: center;
+    }
+  
+    .nav-list.active {
+      display: flex;
+    }
+  }
+  
+  

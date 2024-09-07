@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Diracloud</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <h1>Diracloud</h1>
+      </div>
+      <nav>
+        <ul class="nav-list">
+          <li><a href="#" onclick="showPage('home')">Home</a></li>
+          <li class="dropdown">
+            <a href="#" onclick="showPage('services')">Services</a>
+            <ul class="dropdown-content">
+              <li>
+                <a href="#" onclick="showPage('cloud-hosting')">hotspot</a>
+              </li>
+              <li>
+                <a href="#" onclick="showPage('cloud-storage')"
+                  >Cloud Storage</a
+                >
+              </li>
+              <li>
+                <a href="#" onclick="showPage('cloud-security')"
+                  >Cloud Security</a
+                >
+              </li>
+            </ul>
+          </li>
+          <li><a href="#" onclick="showPage('about')">About Us</a></li>
+          <li><a href="#" onclick="showPage('faq')">FAQ</a></li>
+          <li><a href="#" onclick="showPage('contact')">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="menu-toggle" id="mobile-menu">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
+    </header>
+
+    <main id="content">
+      <!-- Default home content -->
+      <section id="home" class="page">
+        <h2>Welcome to Diracloud</h2>
+        <p>Your reliable cloud service provider.</p>
+      </section>
+
+      <!-- Services content -->
+      <section id="services" class="page" style="display: none">
+        <h2>Our Services</h2>
+        <p>
+          We offer a wide range of cloud services including cloud hosting,
+          storage, and security.
+        </p>
+      </section>
+
+      <section id="cloud-hosting" class="page" style="display: none">
+        <h2>Customizable Internet Plan Configurations</h2>
+        <p>
+          Tailor plans to perfection. Offer flexible speed, data limits, and
+          pricing options. Simplify choices, cater to diverse needs and enhance
+          customer satisfaction effortlessly.
+        </p>
+      </section>
+
+      <section id="cloud-storage" class="page" style="display: none">
+        <h2>Cloud Storage</h2>
+        <p>
+          Secure and reliable cloud storage solutions tailored to your data
+          management needs.
+        </p>
+      </section>
+
+      <section id="cloud-security" class="page" style="display: none">
+        <h2>Cloud Security</h2>
+        <p>Protect your data with our advanced cloud security services.</p>
+      </section>
+
+      <!-- About Us content -->
+      <section id="about" class="page" style="display: none">
+        <h2>About Us</h2>
+        <p>
+          Diracloud is committed to delivering top-notch cloud services to
+          businesses worldwide.
+        </p>
+      </section>
+
+      <!-- FAQ content -->
+      <section id="faq" class="page" style="display: none">
+        <h2>Frequently Asked Questions</h2>
+        <div class="faq-item">
+          <h3 onclick="toggleAnswer(this)">
+            What is an Internet Billing System?
+          </h3>
+          <p class="faq-answer" style="display: none">
+            Our Internet Billing System manages hotspot and PPPoE clients,
+            offering seamless billing and monitoring for ISPs.
+          </p>
+        </div>
+        <div class="faq-item">
+          <h3 onclick="toggleAnswer(this)">
+            How secure is your Cloud Storage?
+          </h3>
+          <p class="faq-answer" style="display: none">
+            We implement advanced encryption and security protocols to ensure
+            the safety of your data.
+          </p>
+        </div>
+      </section>
+
+      <!-- Contact content -->
+      <section id="contact" class="page" style="display: none">
+        <h2>Contact Us</h2>
+        <p>Feel free to reach out to us for any inquiries or support.</p>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; 2024 Diracloud. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
