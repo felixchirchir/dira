@@ -48,12 +48,30 @@ body {
   
   .dropdown-content {
     display: none;
+    flex-wrap: wrap;
+    color:black;
     position: absolute;
-    background-color: #0056b3;
+    background-color: #eceeef;
     min-width: 200px;
     z-index: 1;
     top: 100%;
     left: 0;
+  }
+  .row {
+    display: flex;
+    flex-wrap: wrap; /* Ensures that the content wraps when necessary */
+    
+  }
+  .col-md-6 {
+    
+    flex: 0 0 50%; /* Takes up 50% of the width, creating two columns */
+    box-sizing: border-box; /* Ensures padding and border are included in the element's width */
+    padding: 10px;
+  }
+  @media (max-width: 768px) {
+    .col-md-6 {
+      flex: 0 0 100%; /* On smaller screens, the columns will stack */
+    }
   }
   
   .dropdown-content li {
