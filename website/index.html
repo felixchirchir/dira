@@ -20,7 +20,7 @@
           <li><a href="#" onclick="showPage('home')">Home</a></li>
 
           <li class="dropdown">
-            <a href="#" onclick="showPage('services')">features</a>
+            <a href="#" onclick="showPage('feature')">features</a>
           </a>
           <div class="dropdown-menu dropdown-content p-3" style="width: 800px;">
             <!-- Added padding and width for styling -->
@@ -68,32 +68,52 @@
           </li>
 
           <li class="dropdown">
-            <a href="#" onclick="showPage('services')">Services</a>
-            <ul class="dropdown-content">
-              <li>
-                <a href="#" onclick="showPage('cloud-hosting')">Network assessment</a>
-              </li>
-              <li>
-                <a href="#" onclick="showPage('cloud-storage')"
-                  >network design</a
-                >
-              </li>
-              <li>
-                <a href="#" onclick="showPage('cloud-security')"
-                  >network configuration</a
-                >
-              </li>
-              <li>
-                <a href="#" onclick="showPage('cloud-security')"
-                  >network configuration</a
-                >
-              </li>
-              <li>
-                <a href="#" onclick="showPage('cloud-security')"
-                  >network configuration</a
-                >
-              </li>
-            </ul>
+            <a href="#" onclick="showPage('feature')">service</a>
+          </a>
+          <div class="dropdown-menu dropdown-content p-3" style="width: 800px;">
+            <!-- Added padding and width for styling -->
+            <div class="row">
+              <div class="col-md-6">
+                <h4>Network assessment</h4>
+                <p>
+                 We evaluate existing network  infrastructure, identify ,weaknesses, bottlenecks and recommend improvement
+                </p>
+              </div>
+              <div class="col-md-6">
+                <h4>Network design</h4>
+                <p>
+                  we design  new networks or upgrade  to  existing  ones, considering  security , scalability, and future  needs
+                </p>
+              </div>
+              <div class="col-md-6">
+                 <h4>Network  Monitoring</h4>
+                <p>With our range  monitoring tools ,we  can  monitor your network 24/7 and alert you if any  issues.</p>
+              </div>
+              <div class="col-md-6">
+                <h4>Radius Server</h4>
+                <p>Manage your Radius server to gain full control of your network.</p>
+              </div>
+              <div class="col-md-6">
+                <h4>Network Monitoring</h4>
+                <p>Monitor your network equipment, servers, and websites.</p>
+              </div>
+              <div class="col-md-6">
+               <h4>network service</h4>
+                <p> We provide  ongoing network management and  support service on a subscription basis.</p>
+              </div>
+              <div class="col-md-6">
+                <h4>Automated Payments</h4>
+                <p>Automate your payments and get paid on time.</p>
+              </div>
+              <div class="col-md-6">
+                <h4>Automated Disconnection</h4>
+                <p>Monitor your network equipment, servers, and websites.</p>
+              </div>
+              
+            </div>
+          </div>
+              
+            </div>
           </li>
           <li><a href="#" onclick="showPage('about')">About Us</a></li>
           <li><a href="#" onclick="showPage('faq')">FAQ</a></li>
@@ -110,8 +130,33 @@
     <main id="content">
       <!-- Default home content -->
       <section id="home" class="page">
-        <h2>Welcome to Diracloud</h2>
-        <p>Your reliable cloud service provider.</p>
+        <div class="image-slider">
+            <div class="slide">
+                <div class="container">
+                    <div class="image-container" style="float: right;">
+                        <img src="Dira/images/hotspot.jpg" alt="Hotspot">
+                    </div>
+                    <div class="content-container">
+                        <!-- Add any additional content here if needed -->
+                    </div>
+                </div>
+            </div>
+            <div class="slide">
+                <img src="images/ppoe.jpg" alt="PPPoE">
+            </div>
+            <div class="slide">
+                <img src="images/hotspot-graph.jpg" alt="Hotspot Graph">
+            </div>
+        </div>
+        <script>
+           
+        </script>
+        <div class="content">
+        <h2>Now Available Everywhere</h2><br>
+         <h1 style="color: blue;">DIRALINK SYSTEM</h1> 
+        <h4>Easy Configuration | Set Price for each Plan | Awesome Dashboard.</h4>
+        <p>We provide a comprehensive suite of solutions to enhance your network operations, Wifi advertising, and ISP internet billing</p>
+      </div>
       </section>
 
       <!-- Services content -->
@@ -124,35 +169,19 @@
       </section>
 
       <section id="cloud-hosting" class="page" style="display: none">
-        <h2>Customizable Internet Plan Configurations</h2>
+        <h2></h2>Network assessment</h2>
         <p>
-          Tailor plans to perfection. Offer flexible speed, data limits, and
-          pricing options. Simplify choices, cater to diverse needs and enhance
-          customer satisfaction effortlessly.
+         We evaluate existing network  infrastructure, identify ,weaknesses, bottlenecks and recommend improvement
         </p>
       </section>
 
       <section id="cloud-storage" class="page" style="display: none">
-        <h2>Cloud Storage</h2>
+        <h2>Network design</h2>
         <p>
-          Secure and reliable cloud storage solutions tailored to your data
-          management needs.
+          we design  new networks or upgrade  to  existing  ones, considering  security , scalability, and future  needs
         </p>
       </section>
 
-      <section id="cloud-security" class="page" style="display: none">
-        <h2>Cloud Security</h2>
-        <p>Protect your data with our advanced cloud security services.</p>
-      </section>
-
-      <!-- About Us content -->
-      <section id="about" class="page" style="display: none">
-        <h2>About Us</h2>
-        <p>
-          Diracloud is committed to delivering top-notch cloud services to
-          businesses worldwide.
-        </p>
-      </section>
 
       <!-- FAQ content -->
       <section id="faq" class="page" style="display: none">
@@ -175,6 +204,11 @@
             the safety of your data.
           </p>
         </div>
+      </section>
+
+      <!-- About Us content -->
+      <section id="about" class="page" style="display: none">
+        <!-- The content of the about us page will be loaded here -->
       </section>
 
       <!-- Contact content -->
