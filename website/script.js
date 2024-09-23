@@ -15,9 +15,10 @@ function showPage(pageId) {
   // Show the selected page
   const selectedPage = document.getElementById(pageId);
   if (selectedPage) {
-    if (pageId === 'about') {
-      // Load the about us content
-      fetch('about us.html')
+    if (pageId === 'about' || pageId === 'faq') {
+      // Load the content for about or FAQ
+      const fileName = pageId === 'about' ? 'about us.html' : 'faq.html';
+      fetch(fileName)
         .then(response => response.text())
         .then(html => {
           const parser = new DOMParser();
@@ -25,23 +26,38 @@ function showPage(pageId) {
           const mainContent = doc.querySelector('main').innerHTML;
           selectedPage.innerHTML = mainContent;
           selectedPage.style.display = 'block';
+          if (pageId === 'faq') {
+            // Reinitialize FAQ functionality
+            initializeFAQ();
+          }
         })
-        .catch(error => console.error('Error loading about us content:', error));
+        .catch(error => console.error(`Error loading ${pageId} content:`, error));
     } else {
       selectedPage.style.display = 'block';
     }
   }
 }
-// FAQ Toggle Functionality
+/*
+// Function to toggle FAQ answers
 function toggleAnswer(question) {
   const answer = question.nextElementSibling;
-  if (answer.style.display === 'block') {
-    answer.style.display = 'none';
+  if (answer.style.maxHeight) {
+    answer.style.maxHeight = null;
   } else {
-    answer.style.display = 'block';
+    answer.style.maxHeight = answer.scrollHeight + "px";
   }
 }
 
+// Function to initialize FAQ functionality
+function initializeFAQ() {
+  const faqQuestions = document.querySelectorAll('.faq-question');
+  faqQuestions.forEach(question => {
+    question.addEventListener('click', () => {
+      const answer = question.nextElementSibling;
+      answer.style.display = answer.style.display === 'block' ? 'none' : 'block';
+    });
+  });
+} */
 
 // Function to initialize the contact page
 function initializeContactPage() {
@@ -122,6 +138,50 @@ document.addEventListener('DOMContentLoaded', function() {
   showSlide(currentSlide);
   setInterval(nextSlide, 5000); // Change slide every 5 seconds
 });
+
+// FAQ functionality
+function showPage(pageId) {
+  // Hide all pages
+  const pages = document.querySelectorAll('.page');
+  pages.forEach(page => page.style.display = 'none');
+
+  // Show the selected page
+  const selectedPage = document.getElementById(pageId);
+  if (selectedPage) {
+    if (pageId === 'about' || pageId === 'faq') {
+      // Load the content for about or FAQ
+      const fileName = pageId === 'about' ? 'about us.html' : 'faq.html';
+      fetch(fileName)
+        .then(response => response.text())
+        .then(html => {
+          const parser = new DOMParser();
+          const doc = parser.parseFromString(html, 'text/html');
+          const mainContent = doc.querySelector('main').innerHTML;
+          selectedPage.innerHTML = mainContent;
+          selectedPage.style.display = 'block';
+          if (pageId === 'faq') {
+            // Reinitialize FAQ functionality
+            initializeFAQ();
+          }
+        })
+        .catch(error => console.error(`Error loading ${pageId} content:`, error));
+    } else {
+      selectedPage.style.display = 'block';
+    }
+  }
+}
+// Initialize FAQ functionality when the DOM is loaded
+document.addEventListener('DOMContentLoaded', initializeFAQ);
+
+function initializeFAQ() {
+  const faqQuestions = document.querySelectorAll('.faq-question');
+  faqQuestions.forEach(question => {
+    question.addEventListener('click', () => {
+      const answer = question.nextElementSibling;
+      answer.style.display = answer.style.display === 'block' ? 'none' : 'block';
+    });
+  });
+}
 
 
 

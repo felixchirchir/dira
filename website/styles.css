@@ -1,4 +1,3 @@
-
   /* General Styles */
 body {
     font-family: Arial, sans-serif;
@@ -146,16 +145,7 @@ body {
     border-left: 3px solid #007bff;
   }
   
-  /* Footer Styles */
-  footer {
-    background-color: #333;
-    color: white;
-    text-align: center;
-    padding: 15px 0;
-    position: fixed;
-    width: 100%;
-    bottom: 0;
-  }
+  
   
   /* Mobile Styles */
   .menu-toggle {
@@ -214,7 +204,7 @@ body {
   .image-slider {
     flex-basis: 25%;
     margin-bottom: 30px;
-     background-color:aqua;
+  
      width: 25%;
    
   }
@@ -261,15 +251,46 @@ body {
 
   
   /* About Us Page Styles */
-  #about {
-    padding: 40px 20px;
-    background-color: #f8f9fa;
+  
+  .about-us-container {
+    
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+ 
+  
+    
+  
+  
+  .column3{
+    display:inline-flex;
+    flex: 1; /* Takes up 50% of the width, creating two columns */
+    box-sizing: border-box; /* Ensures padding and border are included in the element's width */
+    
+  margin: 10px;
+  padding: 20px;
+  background-color: lightgray;
+  text-align: start;
+  
   }
 
-  #about h2 {
-    color: #007bff;
-    margin-bottom: 20px;
+  .about-us-column h2,
+  .about-us-column h3 {
     text-align: center;
+    color: #007bff;
+  }
+
+  .about-us-column ul {
+   
+    padding-left: 0;
+    text-align: start;
+    
+  }
+
+  .about-us-column li {
+      
+      align-items: center;
   }
 
   #about p {
@@ -279,33 +300,14 @@ body {
     max-width: 800px;
     margin: 0 auto 20px;
   }
-  .content{
-    text-align: center;
-    align-content: content;
-    align-self: center;
-    margin-right:500px;
-    main {
-      padding: 2rem 0;
-  }
-  /* Centre the unordered list */
-.add{
-  padding-left: 0;
-    list-style-position: inside;
-    text-align: center;
-    
-}
-}
 
-li {
-  margin-bottom: 0.5rem;
-}
-  section {
-      margin-bottom: 2rem;
-  }
-  
+  /* Centre the unordered list */
+
+
+
   /* Images */
   img {
-      max-width: 100%;
+      max-width:100%;
       height: auto;
       display: block;
       margin: 1rem 0;
@@ -313,14 +315,7 @@ li {
       border-radius: 4px;
   }
   
-  /* List styles */
-  ul {
-      padding-left: 20px;
-  }
-  
-  li {
-      margin-bottom: 0.5rem;
-  }
+ 
 
   /* Image Gallery Styles */
   .image-gallery {
@@ -404,4 +399,42 @@ li {
   #contact-form button:hover {
     background-color: #0056b3;
   }
+  /* Footer Styles */
+  footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+  }
+  .video-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: -1;
+}
+
+/* Ensure video covers entire screen */
+video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    transform: translate(-50%, -50%);
+}
+.content{
   
+    position: relative;
+    z-index: 1;
+    color: white;
+    text-align: center;
+    padding-top: 20%;
+}
+
+

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FAQ - Diralink Billing System</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <h1>Diralink</h1>
+      </div>
+      <nav>
+        <ul class="nav-list">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="#" onclick="showPage('about')">About Us</a></li>
+          <li><a href="#" onclick="showPage('faq')">FAQ</a></li>
+          <li><a href="#" onclick="showPage('contact')">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="menu-toggle" id="mobile-menu">
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+      </div>
+    </header>
+
+    <main id="faq" class="page">
+      <h1>Frequently Asked Questions</h1>
+
+      <div class="faq-item">
+        <h3 class="faq-question">
+          What is required for a hotspot billing system?
+        </h3>
+        <div class="faq-answer">
+          <p>A hotspot billing system typically requires:</p>
+          <ul>
+            <li>A router (e.g., Mikrotik)</li>
+            <li>Billing software</li>
+            <li>Payment gateway integration (e.g., M-Pesa API)</li>
+            <li>Internet connection</li>
+            <li>User management system</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <h3>How does Mikrotik integrate with a hotspot billing system?</h3>
+        <div class="faq-answer">
+          <p>
+            Mikrotik routers can be configured to work with hotspot billing
+            systems by:
+          </p>
+          <ul>
+            <li>Setting up hotspot authentication</li>
+            <li>Configuring bandwidth limits</li>
+            <li>Integrating with external billing software</li>
+            <li>Managing user sessions and data usage</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <h3>How can M-Pesa API be integrated into the billing system?</h3>
+        <div class="faq-answer">
+          <p>M-Pesa API integration allows for automated payments:</p>
+          <ul>
+            <li>Implement M-Pesa's Daraja API</li>
+            <li>Set up STK push for easy payments</li>
+            <li>Configure webhook for payment notifications</li>
+            <li>Automate account crediting upon successful payment</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <h3 onclick="toggleAnswer(this)">
+          Can the system handle internet speeds as low as 5 Mbps?
+        </h3>
+        <div class="faq-answer">
+          <p>Yes, the system can handle low-bandwidth connections:</p>
+          <ul>
+            <li>Configure bandwidth allocation per user</li>
+            <li>Implement fair usage policies</li>
+            <li>Optimize content delivery for low-bandwidth users</li>
+            <li>Offer tiered packages based on speed requirements</li>
+          </ul>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <p>&copy; 2023 Dira Hotspot. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
