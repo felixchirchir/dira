@@ -20,99 +20,142 @@
           <li><a href="#" onclick="showPage('home')">Home</a></li>
 
           <li class="dropdown">
-            <a href="#" onclick="showPage('feature')">features</a>
-          </a>
-          <div class="dropdown-menu dropdown-content p-3" style="width: 800px;">
-            <!-- Added padding and width for styling -->
-            <div class="row">
-              <div class="col-md-6">
-                <h4>Hotspot</h4>
-                <p>Automate hotspot billing. Accept M-Pesa, credit card payments, and be in control of your Wi-Fi.</p>
+            <a href="#" onclick="showPage('feature')">Features</a>
+            <div
+              class="dropdown-menu dropdown-content p-3"
+              style="width: 800px"
+            >
+              <div class="row">
+                <a
+                  href="#hotspotDetail"
+                  class="col-md-6"
+                  onclick="showFeatureDetail('hotspot'); return false;"
+                >
+                  <h4>Hotspot</h4>
+                  <p>
+                    Automate hotspot billing. Accept M-Pesa, credit card
+                    payments, and be in control of your Wi-Fi.
+                  </p>
+                </a>
+                <a
+                  href="#pppoemanagementDetail"
+                  class="col-md-6"
+                  onclick="showFeatureDetail('pppoemanagement'); return false;"
+                >
+                  <h4>PPPoE Management</h4>
+                  <p>
+                    Manage your PPPoE client using an easy-to-use platform and
+                    watch your business soar.
+                  </p>
+                </a>
+                <a
+                  href="#captiveportalDetail"
+                  class="col-md-6"
+                  onclick="showFeatureDetail('captiveportal'); return false;"
+                >
+                  <h4>Captive Portal</h4>
+                  <p>
+                    A beautiful and appealing captive portal that will make your
+                    clients want to connect to your Wi-Fi.
+                  </p>
+                </a>
+                <a
+                  href="#radiusserverDetail"
+                  class="col-md-6"
+                  onclick="showFeatureDetail('radiusserver'); return false;"
+                >
+                  <h4>Radius Server</h4>
+                  <p>
+                    Manage your Radius server to gain full control of your
+                    network.
+                  </p>
+                </a>
+                <a
+                  href="#networkmonitoringDetail"
+                  class="col-md-6"
+                  onclick="showFeatureDetail('networkmonitoring'); return false;"
+                >
+                  <h4>Network Monitoring</h4>
+                  <p>Monitor your network equipment, servers, and websites.</p>
+                </a>
+                <a
+                  href="#internetpackagesDetail"
+                  class="col-md-6"
+                  onclick="showFeatureDetail('internetpackages'); return false;"
+                >
+                  <h4>Internet Packages</h4>
+                  <p>
+                    Customize your internet packages and offer your clients the
+                    best deals.
+                  </p>
+                </a>
+                <a
+                  href="#automatedpaymentsDetail"
+                  class="col-md-6"
+                  onclick="showFeatureDetail('automatedpayments'); return false;"
+                >
+                  <h4>Automated Payments</h4>
+                  <p>Automate your payments and get paid on time.</p>
+                </a>
+                <a
+                  href="#automateddisconnectionDetail"
+                  class="col-md-6"
+                  onclick="showFeatureDetail('automateddisconnection'); return false;"
+                >
+                  <h4>Automated Disconnection</h4>
+                  <p>Monitor your network equipment, servers, and websites.</p>
+                </a>
+                <a
+                  href="#realtimecommunicationDetail"
+                  class="col-md-6"
+                  onclick="showFeatureDetail('realtimecommunication'); return false;"
+                >
+                  <h4>Real-time Communication</h4>
+                  <p>
+                    Communicate with your clients in real-time using our SMS and
+                    email features.
+                  </p>
+                </a>
               </div>
-              <div class="col-md-6">
-                <h4>PPPoE Management</h4>
-                <p>Manage your PPPoE client using an easy-to-use platform and watch your business soar.</p>
-              </div>
-              <div class="col-md-6">
-                <h4>Captive Portal</h4>
-                <p>A beautiful and appealing captive portal that will make your clients want to connect to your Wi-Fi.</p>
-              </div>
-              <div class="col-md-6">
-                <h4>Radius Server</h4>
-                <p>Manage your Radius server to gain full control of your network.</p>
-              </div>
-              <div class="col-md-6">
-                <h4>Network Monitoring</h4>
-                <p>Monitor your network equipment, servers, and websites.</p>
-              </div>
-              <div class="col-md-6">
-                <h4>Internet Packages</h4>
-                <p>Customize your internet packages and offer your clients the best deals.</p>
-              </div>
-              <div class="col-md-6">
-                <h4>Automated Payments</h4>
-                <p>Automate your payments and get paid on time.</p>
-              </div>
-              <div class="col-md-6">
-                <h4>Automated Disconnection</h4>
-                <p>Monitor your network equipment, servers, and websites.</p>
-              </div>
-              <div class="col-md-6">
-                <h4>Real-time Communication</h4>
-                <p>Communicate with your clients in real-time using our SMS and email features.</p>
-              </div>
-            </div>
-          </div>
-              
             </div>
           </li>
 
           <li class="dropdown">
-            <a href="#" onclick="showPage('feature')">service</a>
-          </a>
-          <div class="dropdown-menu dropdown-content p-3" style="width: 800px;">
-            <!-- Added padding and width for styling -->
-            <div class="row">
-              <div class="col-md-6">
-                <h4>Network assessment</h4>
-                <p>
-                 We evaluate existing network  infrastructure, identify ,weaknesses, bottlenecks and recommend improvement
-                </p>
+            <a href="#" onclick="showPage('service')">Services</a>
+            <div
+              class="dropdown-menu dropdown-content p-3"
+              style="width: 800px"
+            >
+              <div class="row">
+                <div class="col-md-6">
+                  <h4>Network Assessment</h4>
+                  <p>
+                    We evaluate existing network infrastructure, identify
+                    weaknesses, bottlenecks, and recommend improvements.
+                  </p>
+                </div>
+                <div class="col-md-6">
+                  <h4>Network Design</h4>
+                  <p>
+                    We design new networks or upgrade existing ones, considering
+                    security, scalability, and future needs.
+                  </p>
+                </div>
+                <div class="col-md-6">
+                  <h4>Network Monitoring</h4>
+                  <p>
+                    With our range of monitoring tools, we can monitor your
+                    network 24/7 and alert you if any issues arise.
+                  </p>
+                </div>
+                <div class="col-md-6">
+                  <h4>Network Service</h4>
+                  <p>
+                    We provide ongoing network management and support services
+                    on a subscription basis.
+                  </p>
+                </div>
               </div>
-              <div class="col-md-6">
-                <h4>Network design</h4>
-                <p>
-                  we design  new networks or upgrade  to  existing  ones, considering  security , scalability, and future  needs
-                </p>
-              </div>
-              <div class="col-md-6">
-                 <h4>Network  Monitoring</h4>
-                <p>With our range  monitoring tools ,we  can  monitor your network 24/7 and alert you if any  issues.</p>
-              </div>
-              <div class="col-md-6">
-                <h4>Radius Server</h4>
-                <p>Manage your Radius server to gain full control of your network.</p>
-              </div>
-              <div class="col-md-6">
-                <h4>Network Monitoring</h4>
-                <p>Monitor your network equipment, servers, and websites.</p>
-              </div>
-              <div class="col-md-6">
-               <h4>network service</h4>
-                <p> We provide  ongoing network management and  support service on a subscription basis.</p>
-              </div>
-              <div class="col-md-6">
-                <h4>Automated Payments</h4>
-                <p>Automate your payments and get paid on time.</p>
-              </div>
-              <div class="col-md-6">
-                <h4>Automated Disconnection</h4>
-                <p>Monitor your network equipment, servers, and websites.</p>
-              </div>
-              
-            </div>
-          </div>
-              
             </div>
           </li>
           <li><a href="#" onclick="showPage('about')">About Us</a></li>
@@ -132,22 +175,35 @@
       <section id="home" class="page">
         <div class="video-background">
           <video autoplay muted loop>
-              <source src="images/binary-code-falling.1920x1080.mp4" type="video/mp4">
-              Your browser does not support the video tag.
+            <source
+              src="images/binary-code-falling.1920x1080.mp4"
+              type="video/mp4"
+            />
+            Your browser does not support the video tag.
           </video>
           <div class="content">
-            <h2>Now Available Everywhere</h2><br>
-            <h1 style="color: blue;">DIRALINK SYSTEM</h1> 
-            <h4>Easy Configuration | Set Price for each Plan | Awesome Dashboard.</h4>
-            <p>We provide a comprehensive suite of solutions to enhance your network operations, Wifi advertising, and ISP internet billing</p>
+            <h2>Now Available Everywhere</h2>
+            <br />
+            <h1 style="color: blue">DIRALINK SYSTEM</h1>
+            <h4>
+              Easy Configuration | Set Price for each Plan | Awesome Dashboard.
+            </h4>
+            <p>
+              We provide a comprehensive suite of solutions to enhance your
+              network operations, Wifi advertising, and ISP internet billing
+            </p>
           </div>
         </div>
         <div class="content-section hotspot">
-         
-          <img src="images/hotspot.png" alt="Hotspot">
+          <img src="images/hotspot.png" alt="Hotspot" />
           <div class="section-content">
             <h2>Hotspot Billing</h2>
-            <p>Our hotspot billing system provides a seamless way to monetise your Wi-Fi network. It offers easy setup, flexible pricing options, and real-time usage tracking for public spaces, cafes, hotels, and more.</p>
+            <p>
+              Our hotspot billing system provides a seamless way to monetise
+              your Wi-Fi network. It offers easy setup, flexible pricing
+              options, and real-time usage tracking for public spaces, cafes,
+              hotels, and more.
+            </p>
             <p>Key features:</p>
             <ul>
               <li>User-friendly captive portal</li>
@@ -165,13 +221,17 @@
             </ul>
           </div>
         </div>
-        
+
         <div class="content-section ppoe">
-        
-          <img src="images/ppoe.png" alt="PPPoE">
+          <img src="images/ppoe.png" alt="PPPoE" />
           <div class="section-content">
             <h2>PPPoE</h2>
-            <p>Our PPPoE (Point-to-Point Protocol over Ethernet) solution offers a robust and secure method for delivering broadband internet services. It's ideal for ISPs and enterprises looking to provide reliable, individual connections to multiple users.</p>
+            <p>
+              Our PPPoE (Point-to-Point Protocol over Ethernet) solution offers
+              a robust and secure method for delivering broadband internet
+              services. It's ideal for ISPs and enterprises looking to provide
+              reliable, individual connections to multiple users.
+            </p>
             <p>Key features:</p>
             <ul>
               <li>Secure, individual user authentication</li>
@@ -189,11 +249,12 @@
             </ul>
           </div>
         </div>
-        
-        
-        
-        <div class="container" style="background-color: #f0f0f0; padding: 20px; border-radius: 10px;">
-          <h2 style="text-align: center; margin-bottom: 20px;">Our Impact</h2>
+
+        <div
+          class="container"
+          style="background-color: #f0f0f0; padding: 20px; border-radius: 10px"
+        >
+          <h2 style="text-align: center; margin-bottom: 20px">Our Impact</h2>
           <div class="row">
             <div class="col-md-4">
               <div class="info-box">
@@ -217,7 +278,6 @@
               </div>
             </div>
           </div>
-          
         </div>
       </section>
 
@@ -233,20 +293,23 @@
       <section id="cloud-hosting" class="page" style="display: none">
         <h2>Network assessment</h2>
         <p>
-         We evaluate existing network  infrastructure, identify ,weaknesses, bottlenecks and recommend improvement
+          We evaluate existing network infrastructure, identify ,weaknesses,
+          bottlenecks and recommend improvement
         </p>
       </section>
 
       <section id="cloud-storage" class="page" style="display: none">
         <h2>Network design</h2>
         <p>
-          we design  new networks or upgrade  to  existing  ones, considering  security , scalability, and future  needs
+          we design new networks or upgrade to existing ones, considering
+          security , scalability, and future needs
         </p>
       </section>
 
       <!-- FAQ content -->
       <section id="faq" class="page" style="display: none">
-        <!-- The content of the FAQ page will be loaded here -->
+        <!-- The content of the FAQ page will be loaded 
+         here -->
       </section>
 
       <!-- About Us content -->
@@ -259,12 +322,50 @@
         <h2>Contact Us</h2>
         <p>Feel free to reach out to us for any inquiries or support.</p>
       </section>
-    </main>
 
+     
+
+        <div id="featureDetails" style="display: none">
+          <div id="hotspotDetail">
+            <h3>Hotspot</h3>
+            <p>
+              Our Hotspot feature revolutionises Wi-Fi billing automation. It
+              offers:
+            </p>
+            <ul>
+              <li>Seamless integration with MikroTik routers</li>
+              <li>Support for M-Pesa and credit card payments</li>
+              <li>Customisable billing plans and usage limits</li>
+              <li>Real-time usage tracking and reporting</li>
+              <li>User-friendly captive portal for easy client access</li>
+            </ul>
+            <p>
+              Ideal for cafes, hotels, and public spaces, our Hotspot solution
+              streamlines your Wi-Fi monetisation process.
+            </p>
+          </div>
+
+          <div id="pppoemanagementDetail">
+            <h3>PPPoE Management</h3>
+            <p>
+              Our PPPoE Management system simplifies broadband service delivery:
+            </p>
+            <ul>
+              <li>
+                Easy configuration and management of multiple PPPoE clients
+              </li>
+              <li>Automated billing and payment collection</li>
+              <li>Bandwidth control and usage monitoring</li>
+              <!DOCTYPE html>
+            </ul>
+          </div>
+        </div>
+      </section>
+    </main>
     <footer>
       <p>&copy; 2024 Diracloud. All rights reserved.</p>
     </footer>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
-    <script src="script.js"></script>
+    <script src="js/script.js"></script>
   </body>
 </html>
