@@ -130,45 +130,95 @@
     <main id="content">
       <!-- Default home content -->
       <section id="home" class="page">
-        <div class="image-slider">
-            <div class="slide">
-                <div class="container">
-                    <div class="image-container" style="float: right;">
-                        <img src="images/hotspot.png" alt="Hotspot">
-                    </div>
-                    <div class="content-container">
-                        <!-- Add any additional content here if needed -->
-                    </div>
-                </div>
-            </div>
-            <div class="slide">
-                <img src="images/hotspot.png" alt="hotspot">
-            </div>
-            <div class="slide">
-                <img src="images/ppoe.png" alt="Hotspot Graph">
-            </div>
-            <div class="slide">
-              <img src="images/dashbord.png"alt="Hotspot Graph">
-          </div>
-        </div>
-        <script>
-           
-        </script>
-        <div class="content">
-        <h2>Now Available Everywhere</h2><br>
-         <h1 style="color: blue;">DIRALINK SYSTEM</h1> 
-        <h4>Easy Configuration | Set Price for each Plan | Awesome Dashboard.</h4>
-        <p>We provide a comprehensive suite of solutions to enhance your network operations, Wifi advertising, and ISP internet billing</p>
-        
-        <!-- Added video element -->
         <div class="video-background">
           <video autoplay muted loop>
               <source src="images/binary-code-falling.1920x1080.mp4" type="video/mp4">
               Your browser does not support the video tag.
           </video>
+          <div class="content">
+            <h2>Now Available Everywhere</h2><br>
+            <h1 style="color: blue;">DIRALINK SYSTEM</h1> 
+            <h4>Easy Configuration | Set Price for each Plan | Awesome Dashboard.</h4>
+            <p>We provide a comprehensive suite of solutions to enhance your network operations, Wifi advertising, and ISP internet billing</p>
+          </div>
+        </div>
+        <div class="content-section hotspot">
+         
+          <img src="images/hotspot.png" alt="Hotspot">
+          <div class="section-content">
+            <h2>Hotspot Billing</h2>
+            <p>Our hotspot billing system provides a seamless way to monetise your Wi-Fi network. It offers easy setup, flexible pricing options, and real-time usage tracking for public spaces, cafes, hotels, and more.</p>
+            <p>Key features:</p>
+            <ul>
+              <li>User-friendly captive portal</li>
+              <li>Multiple payment options including M-Pesa</li>
+              <li>Customisable bandwidth and time-based packages</li>
+              <li>Detailed usage reports and analytics</li>
+            </ul>
+            <p>Requirements for automation:</p>
+            <ul>
+              <li>Mikrotik router with hotspot enabled</li>
+              <li>Stable internet connection</li>
+              <li>Diralink billing software</li>
+              <li>M-Pesa API integration</li>
+              <li>User management system</li>
+            </ul>
+          </div>
         </div>
         
-      </div>
+        <div class="content-section ppoe">
+        
+          <img src="images/ppoe.png" alt="PPPoE">
+          <div class="section-content">
+            <h2>PPPoE</h2>
+            <p>Our PPPoE (Point-to-Point Protocol over Ethernet) solution offers a robust and secure method for delivering broadband internet services. It's ideal for ISPs and enterprises looking to provide reliable, individual connections to multiple users.</p>
+            <p>Key features:</p>
+            <ul>
+              <li>Secure, individual user authentication</li>
+              <li>Flexible bandwidth allocation</li>
+              <li>Easy scalability for growing networks</li>
+              <li>Detailed connection logs and monitoring</li>
+            </ul>
+            <p>Requirements for automation:</p>
+            <ul>
+              <li>Mikrotik router with PPPoE server configured</li>
+              <li>Diralink billing software</li>
+              <li>RADIUS server for authentication</li>
+              <li>Automated provisioning system</li>
+              <li>Bandwidth management tools</li>
+            </ul>
+          </div>
+        </div>
+        
+        
+        
+        <div class="container" style="background-color: #f0f0f0; padding: 20px; border-radius: 10px;">
+          <h2 style="text-align: center; margin-bottom: 20px;">Our Impact</h2>
+          <div class="row">
+            <div class="col-md-4">
+              <div class="info-box">
+                <h3>Active Users</h3>
+                <p class="stat">1,000+</p>
+                <p>Satisfied customers using our services daily</p>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="info-box">
+                <h3>Total Revenue</h3>
+                <p class="stat">Ksh.25,000+</p>
+                <p>Generated for our clients through efficient billing</p>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="info-box">
+                <h3>Devices Connected</h3>
+                <p class="stat">1,000+</p>
+                <p>Seamlessly managed across various networks</p>
+              </div>
+            </div>
+          </div>
+          
+        </div>
       </section>
 
       <!-- Services content -->
@@ -181,7 +231,7 @@
       </section>
 
       <section id="cloud-hosting" class="page" style="display: none">
-        <h2></h2>Network assessment</h2>
+        <h2>Network assessment</h2>
         <p>
          We evaluate existing network  infrastructure, identify ,weaknesses, bottlenecks and recommend improvement
         </p>
@@ -194,9 +244,10 @@
         </p>
       </section>
 
-
       <!-- FAQ content -->
-    
+      <section id="faq" class="page" style="display: none">
+        <!-- The content of the FAQ page will be loaded here -->
+      </section>
 
       <!-- About Us content -->
       <section id="about" class="page" style="display: none">

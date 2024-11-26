@@ -3,97 +3,134 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>FAQ - Diralink Billing System</title>
-    <link rel="stylesheet" href="styles.css" />
+    <title>FAQ</title>
   </head>
   <body>
-    <header>
-      <div class="logo">
-        <h1>Diralink</h1>
-      </div>
-      <nav>
-        <ul class="nav-list">
-          <li><a href="index.html">Home</a></li>
-          <li><a href="#" onclick="showPage('about')">About Us</a></li>
-          <li><a href="#" onclick="showPage('faq')">FAQ</a></li>
-          <li><a href="#" onclick="showPage('contact')">Contact</a></li>
-        </ul>
-      </nav>
-      <div class="menu-toggle" id="mobile-menu">
-        <div class="bar"></div>
-        <div class="bar"></div>
-        <div class="bar"></div>
-      </div>
-    </header>
-
-    <main id="faq" class="page">
-      <h1>Frequently Asked Questions</h1>
-
+    <section id="faq" class="page">
+      <h2>Frequently Asked Questions</h2>
       <div class="faq-item">
-        <h3 class="faq-question">
-          What is required for a hotspot billing system?
-        </h3>
-        <div class="faq-answer">
-          <p>A hotspot billing system typically requires:</p>
-          <ul>
-            <li>A router (e.g., Mikrotik)</li>
-            <li>Billing software</li>
-            <li>Payment gateway integration (e.g., M-Pesa API)</li>
-            <li>Internet connection</li>
-            <li>User management system</li>
-          </ul>
-        </div>
-      </div>
-
-      <div class="faq-item">
-        <h3>How does Mikrotik integrate with a hotspot billing system?</h3>
-        <div class="faq-answer">
+        <h3 class="faq-question">What is Dira Cloud, and how does it manage billing for hotspot and PPPoE services?</h3>
+        <div class="faq-answer" style="display: none">
           <p>
-            Mikrotik routers can be configured to work with hotspot billing
-            systems by:
+            Dira Cloud is a company that offers cloud-based billing solutions specifically designed for Internet Service Providers (ISPs) using MikroTik routers. It provides a billing system that integrates seamlessly with MikroTik routers to manage and automate billing for both hotspot and PPPoE services. The system allows ISPs to track customer usage, generate bills, and handle payments efficiently for both prepaid and postpaid models.
           </p>
-          <ul>
-            <li>Setting up hotspot authentication</li>
-            <li>Configuring bandwidth limits</li>
-            <li>Integrating with external billing software</li>
-            <li>Managing user sessions and data usage</li>
-          </ul>
         </div>
       </div>
-
       <div class="faq-item">
-        <h3>How can M-Pesa API be integrated into the billing system?</h3>
-        <div class="faq-answer">
-          <p>M-Pesa API integration allows for automated payments:</p>
-          <ul>
-            <li>Implement M-Pesa's Daraja API</li>
-            <li>Set up STK push for easy payments</li>
-            <li>Configure webhook for payment notifications</li>
-            <li>Automate account crediting upon successful payment</li>
-          </ul>
+        <h3 class="faq-question">How does Dira Cloud's billing system integrate with a MikroTik router for hotspot services?</h3>
+        <div class="faq-answer" style="display: none">
+          <p>
+            Dira Cloud's billing system integrates with a MikroTik router by configuring the router to handle user authentication and authorization through a captive portal. When a user connects to the hotspot, they are redirected to the billing system where they can log in, purchase a data package, or pay for usage. The system tracks their session duration or data usage, generates an invoice, and can automatically disconnect users when their balance is exhausted.
+          </p>
         </div>
       </div>
-
       <div class="faq-item">
-        <h3 onclick="toggleAnswer(this)">
-          Can the system handle internet speeds as low as 5 Mbps?
-        </h3>
-        <div class="faq-answer">
-          <p>Yes, the system can handle low-bandwidth connections:</p>
-          <ul>
-            <li>Configure bandwidth allocation per user</li>
-            <li>Implement fair usage policies</li>
-            <li>Optimize content delivery for low-bandwidth users</li>
-            <li>Offer tiered packages based on speed requirements</li>
-          </ul>
+        <h3 class="faq-question">How does the billing system handle PPPoE billing?</h3>
+        <div class="faq-answer" style="display: none">
+          <p>
+            For PPPoE users, the Dira Cloud billing system integrates with the MikroTik router to manage user authentication and bandwidth limits. Customers authenticate via their PPPoE credentials, and the billing system monitors their usage (such as bandwidth or session time). It supports prepaid and postpaid models, automatically generating bills based on usage, or setting fixed monthly charges. The system can also send automated notifications when users are approaching their limits or when a payment is due.
+          </p>
         </div>
       </div>
-    </main>
-
-    <footer>
-      <p>&copy; 2023 Dira Hotspot. All rights reserved.</p>
-    </footer>
-
-    <script src="script.js"></script>
+      <div class="faq-item">
+        <h3 class="faq-question">What are the key requirements for implementing Dira Cloud's billing system using a MikroTik router?</h3>
+        <div class="faq-answer" style="display: none">
+          <p>
+            To implement Dira Cloud's billing system with a MikroTik router, the following requirements are essential:
+            <ul>
+              <li>MikroTik Router: A properly configured MikroTik router capable of managing hotspot or PPPoE connections.</li>
+              <li>Internet Connection: A reliable internet connection to ensure smooth communication between the MikroTik router and the Dira Cloud billing system.</li>
+              <li>Dira Cloud Account: An active subscription to Dira Cloud's billing platform to access and configure billing features.</li>
+              <li>RouterOS Compatibility: The MikroTik router must be running a compatible version of RouterOS that supports hotspot and PPPoE configurations.</li>
+              <li>RADIUS Server Configuration: For PPPoE billing, a RADIUS (Remote Authentication Dial-In User Service) server may be required to handle authentication and accounting, which can be integrated with the Dira Cloud billing system.</li>
+              <li>Payment Gateway Integration: Integration with payment gateways (such as PayPal or mobile money services) to allow for automatic or manual payments by customers.</li>
+            </ul>
+          </p>
+        </div>
+      </div>
+      <div class="faq-item">
+        <h3 class="faq-question">How does Dira Cloud support both prepaid and postpaid billing models for ISPs?</h3>
+        <div class="faq-answer" style="display: none">
+          <p>
+            Dira Cloud offers flexibility in billing by supporting both prepaid and postpaid models:
+            <ul>
+              <li>Prepaid Billing: Customers purchase data packages or time-based internet access in advance. Once the purchased quota is used, the system can automatically restrict or disconnect access until the user purchases more.</li>
+              <li>Postpaid Billing: Users are billed at the end of the billing period (monthly, for example) based on their usage. The system generates detailed invoices and sends them to customers for payment before the due date.</li>
+            </ul>
+          </p>
+        </div>
+      </div>
+      <div class="faq-item">
+        <h3 class="faq-question">What are the benefits of using Dira Cloud's billing system for hotspot and PPPoE services?</h3>
+        <div class="faq-answer" style="display: none">
+          <p>
+            The key benefits include:
+            <ul>
+              <li>Automation: The system automates the billing process, reducing the manual effort required to track customer usage, send invoices, and collect payments.</li>
+              <li>Scalability: Dira Cloud's system can scale to handle a large number of hotspot and PPPoE users, making it suitable for ISPs of various sizes.</li>
+              <li>Payment Flexibility: The system integrates with multiple payment gateways, allowing users to pay with various methods, such as credit cards, mobile money, or bank transfers.</li>
+              <li>Usage Monitoring: ISPs can easily monitor customer usage, bandwidth consumption, and connection time in real time, allowing for better customer management and service optimization.</li>
+              <li>Security: It provides secure handling of user authentication and billing data, ensuring that sensitive information is protected.</li>
+              <li>Notifications and Alerts: The system can send automated notifications for low balance, upcoming due dates, or service expiration, improving the customer experience.</li>
+            </ul>
+          </p>
+        </div>
+      </div>
+      <div class="faq-item">
+        <h3 class="faq-question">How does Dira Cloud ensure reliable service continuity when integrated with MikroTik routers?</h3>
+        <div class="faq-answer" style="display: none">
+          <p>
+            Dira Cloud ensures reliable service continuity by:
+            <ul>
+              <li>Cloud-Based Architecture: The billing system operates in the cloud, reducing downtime and dependency on local servers. This allows continuous service availability.</li>
+              <li>Failover and Redundancy: Dira Cloud's infrastructure includes failover mechanisms to maintain uptime even during technical failures.</li>
+              <li>Automatic Service Suspension/Restoration: The system can automatically suspend services if a customer's balance runs out or a payment is overdue, and can restore access once payment is received.</li>
+            </ul>
+          </p>
+        </div>
+      </div>
+      <div class="faq-item">
+        <h3 class="faq-question">Can Dira Cloud generate detailed usage reports for hotspot and PPPoE users?</h3>
+        <div class="faq-answer" style="display: none">
+          <p>
+            Yes, Dira Cloud can generate detailed usage reports for both hotspot and PPPoE users. The system provides insights such as:
+            <ul>
+              <li>Total Data Usage: Breakdown of data consumed by individual users over a specified period.</li>
+              <li>Session Information: Start and end times of user sessions, duration of usage, and bandwidth consumed.</li>
+              <li>Billing Summary: Invoices, payments made, and outstanding balances.</li>
+              <li>Customer Insights: Detailed reports on customer behavior, such as frequent usage patterns, helping ISPs make informed decisions.</li>
+            </ul>
+          </p>
+        </div>
+      </div>
+      <div class="faq-item">
+        <h3 class="faq-question">What payment methods does Dira Cloud support for customer billing?</h3>
+        <div class="faq-answer" style="display: none">
+          <p>
+            Dira Cloud supports various payment methods, including:
+            <ul>
+              <li>Credit/Debit Cards: Through integration with secure payment gateways.</li>
+              <li>Mobile Payments: Mobile money services, which are particularly useful in regions with high mobile payment adoption.</li>
+              <li>Bank Transfers: Support for direct bank transfers for customers who prefer this method.</li>
+              <li>PayPal and Other Wallets: Integration with digital wallets like PayPal for easy online payments.</li>
+            </ul>
+          </p>
+        </div>
+      </div>
+      <div class="faq-item">
+        <h3 class="faq-question">How can Dira Cloud help ISPs grow their business using its billing system?</h3>
+        <div class="faq-answer" style="display: none">
+          <p>
+            Dira Cloud helps ISPs grow by:
+            <ul>
+              <li>Automating Billing: Reducing the time and effort needed to manage billing processes, allowing ISPs to focus on customer acquisition and service improvements.</li>
+              <li>Offering Flexible Packages: Enabling ISPs to create custom data plans or service packages tailored to different customer segments.</li>
+              <li>Improving Customer Retention: By sending timely notifications and offering convenient payment options, it helps ISPs maintain satisfied customers.</li>
+              <li>Data-Driven Decisions: Detailed reports provide insights into customer behavior, allowing ISPs to optimize services and pricing for increased profitability.</li>
+            </ul>
+          </p>
+        </div>
+      </div>
+    </section>
   </body>
 </html>
